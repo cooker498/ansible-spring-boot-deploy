@@ -25,7 +25,7 @@
   - name: get pid of api
     tags:
      - test
-    shell: "ps -ef | grep -v grep | grep resmanageappservice | awk '{print $2}'"
+    shell: "ps -ef | grep -v grep | grep {{project_name}} | awk '{print $2}'"
     register: running_processes
 
 # 发送停止运行信号

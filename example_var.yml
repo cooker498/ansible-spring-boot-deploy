@@ -1,0 +1,5 @@
+---
+pwd: /home/app/example
+server_port: 8080
+dest: /home/deploy/example
+project_name: example
