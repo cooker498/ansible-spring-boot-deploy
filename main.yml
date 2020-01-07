@@ -19,7 +19,7 @@
     copy:
      src: "{{ pwd }}/target/{{ file_name.stdout }}"
      dest: "{{dest}}/"
-     when: file_name.stdout != ""
+    when: file_name.stdout != ""
 
 # 获取上次jar包运行的pid
   - name: get pid of api
